@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:id="@+id/desc1zzz"
+        android:padding="16dp"
+        android:layout_marginTop="6dp"
+        android:text="* Follow bellow rules "
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/desc1zzz"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="15sp"
+        android:id="@+id/desc1zzzxxxxvvv"
+        android:text="Install and register"
+        />
+    <TextView
+        android:layout_below="@+id/desc1zzzxxxxvvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:includeFontPadding="false"
+        android:id="@+id/desc1zzzxxxx"
+        android:padding="16dp"
+        android:layout_marginTop="6dp"
+        android:text="* If you follow rules reward ammount credited within 24 hours.Check offer claims page to claim money to your wallet "
+        android:layout_centerHorizontal="true"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_below="@+id/desc1zzzxxxx"
+        android:layout_marginTop="6dp"
+        android:id="@+id/head1xzzzz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_semibold"
+        android:includeFontPadding="false"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="OKK"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:backgroundTint="#4CAF50"
+        />
+
+</RelativeLayout>

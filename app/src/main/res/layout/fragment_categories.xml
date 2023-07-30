@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color5a"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/ascvs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search"
+            android:layout_toLeftOf="@+id/ascva"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="12sp"
+            android:paddingEnd="16dp"
+            android:alpha="0.75"
+            android:id="@+id/ascvaxxx"
+            android:paddingTop="8dp"
+            android:background="@null"
+            android:paddingBottom="8dp"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:drawableStart="@drawable/ic_baseline_search_24"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:paddingStart="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="12sp"
+            android:text="offers claims"
+            android:textAllCaps="true"
+            android:paddingEnd="16dp"
+            android:alpha="0.75"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ascva"
+            android:background="@null"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:drawablePadding="8dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/black"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:imeOptions="actionSearch"
+            android:paddingStart="16dp"/>
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/install_items"
+        android:layout_below="@+id/ascvs"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        tools:itemCount="6"
+        android:id="@+id/recycler"/>
+
+    <ProgressBar
+        android:id="@+id/progress_small1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:indeterminate="true"
+        android:indeterminateTintMode="src_atop"
+        android:indeterminateTint="@android:color/black"
+        />
+
+</RelativeLayout>
